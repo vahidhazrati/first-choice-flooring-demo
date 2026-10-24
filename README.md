@@ -38,11 +38,21 @@ Keep product-family claims separate from exact sample specifications. Update ima
 - `/#/products/mercier-maple` — Mercier Maple Hardwood concept
 - `/#/products/shaw-pet-perfect-plus` — Shaw Pet Perfect Plus concept
 
+## Live demo
+
+- Homepage: https://vahidhazrati.github.io/first-choice-flooring-demo/
+- Mercier Maple Hardwood: https://vahidhazrati.github.io/first-choice-flooring-demo/#/products/mercier-maple
+- Shaw Pet Perfect Plus: https://vahidhazrati.github.io/first-choice-flooring-demo/#/products/shaw-pet-perfect-plus
+
 The app uses hash routing so product links work on GitHub Pages without an SPA rewrite. Section links scroll within each product without replacing the route hash. The Vite base path is configured for the `first-choice-flooring-demo` repository.
 
 ## GitHub Pages deployment
 
-Pushing to `main` runs `.github/workflows/deploy.yml`. The workflow installs from `package-lock.json` with `npm ci`, runs lint and the production build on Node.js 22, then publishes `dist` with GitHub Pages. Enable **Settings → Pages → Build and deployment → GitHub Actions** in the repository. After deployment, use the live HTTPS hash URLs for sharing and QR codes.
+Pushing to `main` runs `.github/workflows/deploy.yml`. The workflow installs from `package-lock.json` with `npm ci`, runs lint and the production build on Node.js 22, then publishes `dist` with GitHub Pages. GitHub Pages is configured to use Actions as its source. Future pushes to `main` deploy updates automatically.
+
+## QR codes
+
+Static PNG and SVG codes plus a printable sheet are in `qr-codes/`. To regenerate the codes after changing a live destination, update `scripts/generate-qr-codes.mjs` and run `npm run generate:qr`. The script verifies each PNG by decoding it locally and matching the exact URL.
 
 ## Media note
 

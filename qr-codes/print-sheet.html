@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>First Choice Flooring | Product QR Codes</title>
+  <style>
+    :root { color: #222; font: 16px/1.5 Arial, sans-serif; }
+    body { max-width: 900px; margin: 32px auto; padding: 0 24px; }
+    h1 { margin-bottom: 8px; font-size: 28px; }
+    .intro { margin-top: 0; color: #555; }
+    .codes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; margin-top: 30px; }
+    .code-card { break-inside: avoid; text-align: center; }
+    .code-card h2 { font-size: 20px; }
+    .code-card img { display: block; width: min(100%, 280px); height: auto; margin: auto; }
+    .url { overflow-wrap: anywhere; font-size: 11px; }
+    @media (max-width: 600px) { .codes { grid-template-columns: 1fr; } }
+    @media print { body { margin: 0; max-width: none; } .codes { gap: 18px; } .code-card img { width: 240px; } }
+  </style>
+</head>
+<body>
+  <h1>First Choice Flooring</h1>
+  <p class="intro">Digital sample room · Product QR codes</p>
+  <main class="codes">
+      <article class="code-card">
+        <h2>Mercier Maple Hardwood</h2>
+        <img src="./mercier-maple.svg" alt="QR code linking to Mercier Maple Hardwood" width="280" height="280">
+        <p class="url">https://vahidhazrati.github.io/first-choice-flooring-demo/#/products/mercier-maple</p>
+      </article>
+      <article class="code-card">
+        <h2>Shaw Pet Perfect Plus</h2>
+        <img src="./shaw-pet-perfect-plus.svg" alt="QR code linking to Shaw Pet Perfect Plus" width="280" height="280">
+        <p class="url">https://vahidhazrati.github.io/first-choice-flooring-demo/#/products/shaw-pet-perfect-plus</p>
+      </article>
+  </main>
+</body>
+</html>
