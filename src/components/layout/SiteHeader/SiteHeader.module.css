@@ -1,0 +1,11 @@
+.header { height: 76px; border-bottom: 1px solid var(--line); background: rgba(250,248,243,.94); }
+.inner { width: min(1280px,calc(100% - 48px)); height: 100%; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.wordmark { display: inline-flex; align-items: center; gap: 11px; color: var(--ink); font-family: var(--serif); font-size: 19px; text-decoration: none; white-space: nowrap; }
+.mark { display: grid; width: 36px; height: 36px; place-items: center; border: 1px solid var(--oak); border-radius: 50%; color: var(--oak-deep); font-family: var(--sans); font-size: 11px; font-weight: 700; }
+.wordmarkSecond { color: var(--muted); }
+.nav a { display: inline-flex; align-items: center; gap: 7px; color: var(--ink-soft); font-size: 13px; text-decoration: none; }
+.nav a:hover { color: var(--oak-deep); }
+.demo { display: inline-flex; align-items: center; gap: 8px; padding: 7px 10px; border: 1px solid #e7ded0; border-radius: 3px; color: #756b5f; font-size: 11px; white-space: nowrap; }
+.demo > span { width: 6px; height: 6px; border-radius: 50%; background: #9d7852; }
+@media (max-width:600px) { .header { height: 66px; } .inner { width: calc(100% - 32px); gap: 8px; } .wordmark { gap: 8px; font-size: 16px; } .mark { width: 31px; height: 31px; font-size: 10px; } .wordmarkSecond { display: none; } .nav a { font-size: 12px; } .demo { padding: 6px 7px; font-size: 10px; } }
+@media (max-width:380px) { .demo { gap: 5px; } .inner { width: calc(100% - 24px); } }

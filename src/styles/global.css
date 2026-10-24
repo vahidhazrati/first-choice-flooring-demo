@@ -1,0 +1,10 @@
+* { box-sizing:border-box; }
+html { min-width:320px; scroll-behavior:smooth; }
+body { min-width:320px; margin:0; }
+body,button,a { font-family:var(--sans); }
+button { font:inherit; }
+a { color:inherit; }
+a:focus-visible,button:focus-visible,summary:focus-visible { outline:2px solid #785633; outline-offset:4px; }
+::selection { color:#fff; background:#805638; }
+#root { min-height:100vh; }
+@media (prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; } }
